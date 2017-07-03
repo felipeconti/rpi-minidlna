@@ -1,6 +1,6 @@
 FROM hypriot/rpi-alpine
 
-RUN apk add --no-cache minidlna  
+RUN apk add --no-cache bash minidlna
 
 RUN sed -i 's/media_dir=\/opt/media_dir=\/data/' /etc/minidlna.conf
 RUN sed -i 's/#root_container=./root_container=V/' /etc/minidlna.conf
