@@ -9,5 +9,5 @@ docker build -t rpi-minidlna .
 
 ### Run
 ```sh
-docker run -d --restart=always -v /home/pi/hd/:/data -p 8200:8200 --name=movies felipeconti/rpi-minidlna
+docker run -d --restart=always -v /home/pi/hd/:/data -p 8200:8200 --name=minidlna felipeconti/rpi-minidlna
 ```
